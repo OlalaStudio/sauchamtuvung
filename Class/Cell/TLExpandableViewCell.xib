@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idExpandableCell" rowHeight="120" id="mry-70-wHf" customClass="TLExpandableTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mry-70-wHf" id="LpW-GQ-2gY">
+                <frame key="frameInset" width="426" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezR-Sz-WI9">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ezR-Sz-WI9" secondAttribute="bottom" id="78m-br-La9"/>
+                    <constraint firstItem="ezR-Sz-WI9" firstAttribute="top" secondItem="LpW-GQ-2gY" secondAttribute="top" id="B4a-eo-q3H"/>
+                    <constraint firstItem="ezR-Sz-WI9" firstAttribute="leading" secondItem="LpW-GQ-2gY" secondAttribute="leading" id="DFU-ur-i1P"/>
+                    <constraint firstAttribute="trailing" secondItem="ezR-Sz-WI9" secondAttribute="trailing" id="MIv-F5-0Ir"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textview" destination="ezR-Sz-WI9" id="k9O-xi-dEl"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="83"/>
+        </tableViewCell>
+    </objects>
+</document>
